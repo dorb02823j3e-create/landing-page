@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABB International Manpower Supply and Trade., JSC</title>
+  <meta name="description" content="Landing page giới thiệu Công ty Cổ phần Nhân lực và Thương mại Quốc tế ABB.">
+  <style>
+    :root {
+      --primary: #0a3d62;
+      --secondary: #3c6382;
+      --accent: #f6b93b;
+      --bg: #f5f7fb;
+      --text: #1f2937;
+      --white: #ffffff;
+      --muted: #6b7280;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--bg);
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(10, 61, 98, 0.84), rgba(10, 61, 98, 0.84)),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+      color: var(--white);
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 28px;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #e5e7eb;
+      margin-bottom: 22px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(246, 185, 59, 0.18);
+      border: 1px solid var(--accent);
+      color: #fff8e1;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 10px;
+      padding: 11px 16px;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #1f2937;
+    }
+
+    .btn-outline {
+      border: 1px solid #cbd5e1;
+      color: var(--white);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 14px;
+      padding: 16px;
+      backdrop-filter: blur(3px);
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    section {
+      padding: 58px 0;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e5e7eb;
+    }
+
+    .info-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .info-list strong {
+      min-width: 120px;
+      display: inline-block;
+      color: #0f172a;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .service {
+      background: #eaf2ff;
+      border: 1px solid #dbeafe;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .service h3 {
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+
+    .contact p {
+      margin: 6px 0;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 18px 12px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid,
+      .grid-2,
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">ABB INTERNATIONAL MANPOWER</div>
+      <a class="btn btn-outline" href="#lien-he">Liên hệ ngay</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Mã số doanh nghiệp: 0107412581</span>
+          <h1>CÔNG TY CỔ PHẦN NHÂN LỰC VÀ THƯƠNG MẠI QUỐC TẾ ABB</h1>
+          <p class="subtitle">
+            Đơn vị cung ứng và quản lý nguồn lao động uy tín, hỗ trợ doanh nghiệp và người lao động
+            kết nối cơ hội trong và ngoài nước.
+          </p>
+          <div class="btns">
+            <a class="btn btn-primary" href="#gioi-thieu">Tìm hiểu thêm</a>
+            <a class="btn btn-outline" href="#thong-tin">Thông tin pháp lý</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" alt="Hình ảnh minh họa về doanh nghiệp và nhân lực">
+          <p><strong>Tên quốc tế:</strong> ABB INTERNATIONAL MANPOWER SUPPLY AND TRADE JOINT STOCK COMPANY</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="gioi-thieu">
+      <div class="container">
+        <h2>Giới thiệu công ty</h2>
+        <p class="lead">
+          Công ty được thành lập ngày 27/04/2016, hoạt động tại Hà Nội và tập trung vào lĩnh vực
+          cung ứng, quản lý nguồn lao động cùng các dịch vụ thương mại liên quan.
+        </p>
+        <div class="services">
+          <article class="service">
+            <h3>Cung ứng nhân lực</h3>
+            <p>Tuyển chọn, đào tạo và cung ứng nhân lực phù hợp theo nhu cầu của doanh nghiệp.</p>
+          </article>
+          <article class="service">
+            <h3>Quản lý lao động</h3>
+            <p>Hỗ trợ quản trị lao động, hồ sơ pháp lý và quy trình vận hành nhân sự hiệu quả.</p>
+          </article>
+          <article class="service">
+            <h3>Lao động đi nước ngoài</h3>
+            <p>Tư vấn và triển khai các giải pháp cung ứng, quản lý nguồn lao động làm việc ở nước ngoài.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="thong-tin">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Thông tin doanh nghiệp</h2>
+          <ul class="info-list">
+            <li><strong>Mã số thuế:</strong> 0107412581</li>
+            <li><strong>Tình trạng:</strong> Đang hoạt động</li>
+            <li><strong>Ngày hoạt động:</strong> 2016-04-27</li>
+            <li><strong>Loại hình DN:</strong> Công ty cổ phần ngoài NN</li>
+            <li><strong>Ngành chính:</strong> Cung ứng và quản lý nguồn lao động</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Địa chỉ & đại diện</h2>
+          <ul class="info-list">
+            <li><strong>Địa chỉ trụ sở:</strong> Số 14 Đường Thành, Phường Cửa Đông, Quận Hoàn Kiếm, Hà Nội</li>
+            <li><strong>Địa chỉ thuế:</strong> Số 14 Đường Thành, Phường Hoàn Kiếm, TP Hà Nội, Việt Nam</li>
+            <li><strong>Người đại diện:</strong> BÙI ĐÌNH HIẾU</li>
+            <li><strong>Cơ quan quản lý:</strong> Thuế cơ sở 1 thành phố Hà Nội</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="lien-he">
+      <div class="container card contact">
+        <h2>Liên hệ hợp tác</h2>
+        <p><strong>Tên công ty:</strong> Công ty Cổ phần Nhân lực và Thương mại Quốc tế ABB</p>
+        <p><strong>Email:</strong> dorb02823j3e@gmail.com</p>
+        <p><strong>Địa chỉ:</strong> Số 14 Đường Thành, Phường Cửa Đông, Quận Hoàn Kiếm, Thành phố Hà Nội, Việt Nam</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 ABB International Manpower Supply and Trade., JSC - All rights reserved.
+  </footer>
+</body>
+</html>
